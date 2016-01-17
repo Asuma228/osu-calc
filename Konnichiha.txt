@@ -1,1 +1,1 @@
-ï»¿print("‚±‚ñ‚É‚¿‚Í")
+ï»¿print("Konnichiha;")
