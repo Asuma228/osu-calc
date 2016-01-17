@@ -1,1 +1,1 @@
-print("‚³‚æ‚¤‚È‚ç")
+print("Sayounara;")
