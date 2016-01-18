@@ -1,11 +1,11 @@
 object Form1: TForm1
-  Left = 207
+  Left = 264
   Height = 160
-  Top = 91
+  Top = 196
   Width = 544
   Caption = 'Калькулятор уровня osu!'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 160
+  ClientWidth = 544
   LCLVersion = '1.4.0.4'
   object Edit1: TEdit
     Left = 312
