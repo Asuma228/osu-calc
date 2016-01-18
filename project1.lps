@@ -8,9 +8,10 @@
       <Unit0>
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <UsageCount Value="41"/>
+        <EditorIndex Value="2"/>
+        <CursorPos Y="21"/>
+        <UsageCount Value="43"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="main_lib.pas"/>
@@ -20,14 +21,12 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="main_lib"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="186"/>
-        <CursorPos X="31" Y="190"/>
-        <FoldState Value=" T3iS23131V"/>
-        <UsageCount Value="41"/>
+        <FoldState Value=" T3ig23131_"/>
+        <UsageCount Value="43"/>
         <Bookmarks Count="3">
-          <Item0 X="9" Y="31"/>
-          <Item1 X="5" Y="44" ID="1"/>
-          <Item2 X="2" Y="64" ID="2"/>
+          <Item0 X="9" Y="45"/>
+          <Item1 X="5" Y="58" ID="1"/>
+          <Item2 X="2" Y="78" ID="2"/>
         </Bookmarks>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -41,7 +40,7 @@
       <Unit3>
         <Filename Value="main_lib.lfm"/>
         <EditorIndex Value="1"/>
-        <UsageCount Value="18"/>
+        <UsageCount Value="19"/>
         <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit3>
@@ -56,123 +55,120 @@
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="66" Column="9" TopLine="41"/>
+        <Caret Line="86" Column="10" TopLine="55"/>
       </Position1>
       <Position2>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="68" Column="57" TopLine="43"/>
+        <Caret Line="88" Column="30" TopLine="57"/>
       </Position2>
       <Position3>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="70" Column="10" TopLine="45"/>
+        <Caret Line="90" Column="10" TopLine="59"/>
       </Position3>
       <Position4>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="80" Column="31" TopLine="49"/>
+        <Caret Line="97" Column="11" TopLine="63"/>
       </Position4>
       <Position5>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="82" Column="9" TopLine="51"/>
+        <Caret Line="99" Column="15" TopLine="65"/>
       </Position5>
       <Position6>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="84" Column="30" TopLine="53"/>
+        <Caret Line="106" Column="20" TopLine="72"/>
       </Position6>
       <Position7>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="86" Column="10" TopLine="55"/>
+        <Caret Line="107" Column="20" TopLine="76"/>
       </Position7>
       <Position8>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="88" Column="30" TopLine="57"/>
+        <Caret Line="109" Column="19" TopLine="81"/>
       </Position8>
       <Position9>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="90" Column="10" TopLine="59"/>
+        <Caret Line="115" Column="20" TopLine="87"/>
       </Position9>
       <Position10>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="97" Column="11" TopLine="63"/>
+        <Caret Line="116" Column="43" TopLine="88"/>
       </Position10>
       <Position11>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="99" Column="15" TopLine="65"/>
+        <Caret Line="117" Column="34" TopLine="89"/>
       </Position11>
       <Position12>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="106" Column="20" TopLine="72"/>
+        <Caret Line="119" Column="22" TopLine="91"/>
       </Position12>
       <Position13>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="107" Column="20" TopLine="76"/>
+        <Caret Line="120" Column="25" TopLine="92"/>
       </Position13>
       <Position14>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="109" Column="19" TopLine="81"/>
+        <Caret Line="121" Column="25" TopLine="96"/>
       </Position14>
       <Position15>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="115" Column="20" TopLine="87"/>
+        <Caret Line="122" Column="25" TopLine="97"/>
       </Position15>
       <Position16>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="116" Column="43" TopLine="88"/>
+        <Caret Line="123" Column="25" TopLine="98"/>
       </Position16>
       <Position17>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="117" Column="34" TopLine="89"/>
+        <Caret Line="124" Column="25" TopLine="99"/>
       </Position17>
       <Position18>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="119" Column="22" TopLine="91"/>
+        <Caret Line="125" Column="25" TopLine="101"/>
       </Position18>
       <Position19>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="120" Column="25" TopLine="92"/>
+        <Caret Line="126" Column="25" TopLine="102"/>
       </Position19>
       <Position20>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="121" Column="25" TopLine="96"/>
+        <Caret Line="127" Column="25" TopLine="103"/>
       </Position20>
       <Position21>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="122" Column="25" TopLine="97"/>
+        <Caret Line="119" Column="72" TopLine="104"/>
       </Position21>
       <Position22>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="123" Column="25" TopLine="98"/>
+        <Caret Line="205" Column="8" TopLine="189"/>
       </Position22>
       <Position23>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="124" Column="25" TopLine="99"/>
+        <Caret Line="191" Column="29" TopLine="176"/>
       </Position23>
       <Position24>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="125" Column="25" TopLine="101"/>
+        <Caret Line="236" Column="6" TopLine="210"/>
       </Position24>
       <Position25>
-        <Filename Value="main_lib.pas"/>
-        <Caret Line="126" Column="25" TopLine="102"/>
+        <Filename Value="project1.lpr"/>
       </Position25>
       <Position26>
-        <Filename Value="main_lib.pas"/>
-        <Caret Line="127" Column="25" TopLine="103"/>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="16" Column="27"/>
       </Position26>
       <Position27>
-        <Filename Value="main_lib.pas"/>
-        <Caret Line="119" Column="72" TopLine="104"/>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="21"/>
       </Position27>
       <Position28>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="205" Column="8" TopLine="189"/>
       </Position28>
       <Position29>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="191" Column="29" TopLine="176"/>
+        <Caret Line="261" Column="3" TopLine="234"/>
       </Position29>
       <Position30>
         <Filename Value="main_lib.pas"/>
-        <Caret Line="236" Column="6" TopLine="210"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>

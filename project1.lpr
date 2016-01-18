@@ -13,7 +13,7 @@ uses
 {$R *.res}
 
 begin
-  Application.Title:='osu!_calc';
+  Application.Title:='osu!calc';
   RequireDerivedFormResource := True;
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
