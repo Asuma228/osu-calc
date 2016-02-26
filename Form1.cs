@@ -19,7 +19,9 @@ namespace osu_calc
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+          {
 
+          }
         }
     }
 }
