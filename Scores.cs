@@ -34,16 +34,29 @@ namespace osu_calc
             string currentLevel = "0";
             for (int i = 0; i <= 50; i++)
             {
-                if ((p[i] != 0) || (p[i] != 1) || (p[i] != 2) || (p[i] != 3) || (p[i] != 4) || (p[i] != 5) || (p[i] != 6) || (p[i] != 7) || (p[i] != 8) || (p[i] != 9) || (Convert.ToDouble(p) > arrayScores[500]) || (p == ""))
+                if ((p[i] != '0') 
+                    && (p[i] != '1') 
+                    && (p[i] != '2') 
+                    && (p[i] != '3') 
+                    && (p[i] != '4') 
+                    && (p[i] != '5') 
+                    && (p[i] != '6') 
+                    && (p[i] != '7') 
+                    && (p[i] != '8') 
+                    && (p[i] != '9') 
+                    && (Convert.ToDouble(p) > arrayScores[500]) 
+                    && (p == ""))
                 {
                     currentLevel = "";
                     MessageBox.Show("Вы ввели неверные данные, повторите ввод");
+                    char c = p[i];
                 }
                 else
                 {
                     for (int j = 1; i <= 500; j++)
                     {
-                        if (Convert.ToDouble(p) <= arrayScores[i] && Convert.ToDouble(p) >= arrayScores[i - 1])
+                        if (Convert.ToDouble(p) <= arrayScores[i] 
+                            && Convert.ToDouble(p) >= arrayScores[i - 1])
                         {
                             currentLevel = Convert.ToString(i);
                             break;

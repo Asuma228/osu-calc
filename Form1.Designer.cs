@@ -43,9 +43,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtboxLevelCurrentLevel = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tabControl.SuspendLayout();
             this.tabpgScores.SuspendLayout();
             this.tabpgLevel.SuspendLayout();
@@ -153,7 +153,7 @@
             this.tabpgLevel.Location = new System.Drawing.Point(4, 25);
             this.tabpgLevel.Name = "tabpgLevel";
             this.tabpgLevel.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpgLevel.Size = new System.Drawing.Size(651, 256);
+            this.tabpgLevel.Size = new System.Drawing.Size(651, 232);
             this.tabpgLevel.TabIndex = 1;
             this.tabpgLevel.Text = "Level";
             this.tabpgLevel.UseVisualStyleBackColor = true;
@@ -199,16 +199,6 @@
             this.label9.TabIndex = 7;
             this.label9.Text = "Введите ваш текущий уровень:";
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(659, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -220,9 +210,19 @@
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.файлToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(659, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // MainForm
             // 
@@ -263,8 +263,8 @@
         private System.Windows.Forms.TextBox txtboxLevelCurrentLevel;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
     }
 }
 
