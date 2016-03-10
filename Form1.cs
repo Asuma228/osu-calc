@@ -18,11 +18,13 @@ namespace osu_calc
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void nudScoresCurrentScores_ValueChanged(object sender, EventArgs e)
         {
             {
                 Scores scores = new Scores();
-                lblScoresCurrentLevel.Text = scores.LvlNeeded(txtboxScoresCurrentScores.Text);
+                lblScoresCurrentLevel.Text = scores.LvlNeeded(nudScoresCurrentScores.Value);
+                lblScoresNeededScores.Text = scores.NeededScores(nudScoresCurrentScores.Value);
+
 
             }
         }

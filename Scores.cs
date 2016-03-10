@@ -10,6 +10,8 @@ namespace osu_calc
 
     class Scores
     {
+        private string currentLevel = "0";
+        private string neededScores = "0";
         private double[] arrayScores = new double[501];
 
         public Scores()
@@ -29,42 +31,26 @@ namespace osu_calc
             }
         }
 
-        internal string LvlNeeded(string p)
+        internal string LvlNeeded(decimal p)
         {
-            string currentLevel = "0";
-            for (int i = 0; i <= 50; i++)
-            {
-                if     ((p[i] != '0') 
-                    && (p[i] != '1') 
-                    && (p[i] != '2') 
-                    && (p[i] != '3') 
-                    && (p[i] != '4') 
-                    && (p[i] != '5') 
-                    && (p[i] != '6') 
-                    && (p[i] != '7') 
-                    && (p[i] != '8') 
-                    && (p[i] != '9') 
-                    && (Convert.ToDouble(p) > arrayScores[500]) 
-                    && (p == ""))
-                {
-                    currentLevel = "";
-                    MessageBox.Show("Вы ввели неверные данные, повторите ввод");
-                    char c = p[i];
-                }
-                else
-                {
-                    for (int j = 1; i <= 500; j++)
+
+                    for (int i = 1; i <= 499; i++)
                     {
-                        if (Convert.ToDouble(p) <= arrayScores[i] 
-                            && Convert.ToDouble(p) >= arrayScores[i - 1])
+                        if (Convert.ToDouble(p) >= arrayScores[i] 
+                            && Convert.ToDouble(p) <= arrayScores[i + 1])
                         {
                             currentLevel = Convert.ToString(i);
                             break;
                         }
                     }
-                }
-            }
             return (currentLevel);
+        }
+
+        internal string NeededScores(decimal p)
+        {
+
+            neededScores =  Convert.ToString(arrayScores[Convert.ToInt32(currentLevel)+1] - Convert.ToDouble(p));
+            return neededScores;
         }
     }
 }
