@@ -50,6 +50,15 @@ namespace osu_calc
         {
 
             neededScores =  Convert.ToString(arrayScores[Convert.ToInt32(currentLevel)+1] - Convert.ToDouble(p));
+             
+            for (int i = neededScores.Length; i > 1 ; i--)
+            {
+                if (i % 3 == 0)
+                {
+                    neededScores = neededScores.Insert(neededScores.Length - i, " ");
+                }
+            }
+
             return neededScores;
         }
     }
