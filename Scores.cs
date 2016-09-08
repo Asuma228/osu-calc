@@ -12,7 +12,7 @@ namespace osu_calc
     {
         private string currentLevel = "0";
         private string neededScores = "0";
-        private double[] arrayScores = new double[501];
+        private decimal[] arrayScores = new decimal[501];
 
         public Scores()
         {
@@ -20,14 +20,14 @@ namespace osu_calc
 
             for (int i = 2; i <= 100; i++)
             {
-                Convert.ToDouble(i);
-                arrayScores[i] = (5000 / 3.0 * (4 * System.Math.Pow(i, 3) - 3 * System.Math.Pow(i, 2) - i)) + (1.25 * System.Math.Pow(1.8, i - 60));
+                Convert.ToDecimal(i);
+                arrayScores[i] = Decimal.Truncate(Convert.ToDecimal((5000 / 3.0 * (4 * System.Math.Pow(i, 3) - 3 * System.Math.Pow(i, 2) - i)) + (1.25 * System.Math.Pow(1.8, i - 60))));
             }
 
             for (int i = 101; i <= 500; i++)
             {
-                Convert.ToDouble(i);
-                arrayScores[i] = 26931190829 + 100000000000 * (i - 100);
+                Convert.ToDecimal(i);
+                arrayScores[i] = Decimal.Truncate(26931190829 + 100000000000 * (i - 100));
             }
         }
 
@@ -36,8 +36,8 @@ namespace osu_calc
 
                     for (int i = 1; i <= 499; i++)
                     {
-                        if (Convert.ToDouble(p) >= arrayScores[i] 
-                            && Convert.ToDouble(p) <= arrayScores[i + 1])
+                        if (p >= arrayScores[i] 
+                            && p <= arrayScores[i + 1])
                         {
                             currentLevel = Convert.ToString(i);
                             break;
@@ -49,7 +49,7 @@ namespace osu_calc
         internal string NeededScores(decimal p)
         {
 
-            neededScores =  Convert.ToString(arrayScores[Convert.ToInt32(currentLevel)+1] - Convert.ToDouble(p));
+            neededScores =  Convert.ToString(Convert.ToDecimal(arrayScores[Convert.ToInt32(currentLevel)+1]) - p);
              
             for (int i = neededScores.Length; i > 1 ; i--)
             {
