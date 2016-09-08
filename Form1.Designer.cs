@@ -46,6 +46,7 @@
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.btnPaste = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabpgScores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudScoresCurrentScores)).BeginInit();
@@ -70,6 +71,7 @@
             // 
             // tabpgScores
             // 
+            this.tabpgScores.Controls.Add(this.btnPaste);
             this.tabpgScores.Controls.Add(this.nudScoresCurrentScores);
             this.tabpgScores.Controls.Add(this.lblScoresNeededPercent);
             this.tabpgScores.Controls.Add(this.lblScoresNeededScores);
@@ -218,7 +220,7 @@
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
@@ -231,6 +233,16 @@
             this.menuStrip1.Size = new System.Drawing.Size(754, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // btnPaste
+            // 
+            this.btnPaste.Location = new System.Drawing.Point(485, 24);
+            this.btnPaste.Name = "btnPaste";
+            this.btnPaste.Size = new System.Drawing.Size(122, 23);
+            this.btnPaste.TabIndex = 9;
+            this.btnPaste.Text = "Вставить из буфера";
+            this.btnPaste.UseVisualStyleBackColor = true;
+            this.btnPaste.Click += new System.EventHandler(this.btnPaste_Click);
             // 
             // MainForm
             // 
@@ -274,6 +286,7 @@
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
         private System.Windows.Forms.NumericUpDown nudScoresCurrentScores;
+        private System.Windows.Forms.Button btnPaste;
     }
 }
 
