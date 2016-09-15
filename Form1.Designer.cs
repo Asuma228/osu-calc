@@ -30,6 +30,7 @@
         {
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabpgScores = new System.Windows.Forms.TabPage();
+            this.btnPaste = new System.Windows.Forms.Button();
             this.nudScoresCurrentScores = new System.Windows.Forms.NumericUpDown();
             this.lblScoresNeededPercent = new System.Windows.Forms.Label();
             this.lblScoresNeededScores = new System.Windows.Forms.Label();
@@ -43,15 +44,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtboxLevelCurrentLevel = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.btnPaste = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabpgScores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudScoresCurrentScores)).BeginInit();
             this.tabpgLevel.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -60,12 +56,12 @@
             this.tabControl.Controls.Add(this.tabpgLevel);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.ItemSize = new System.Drawing.Size(45, 21);
-            this.tabControl.Location = new System.Drawing.Point(0, 24);
+            this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Multiline = true;
             this.tabControl.Name = "tabControl";
             this.tabControl.Padding = new System.Drawing.Point(129, 3);
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(754, 227);
+            this.tabControl.Size = new System.Drawing.Size(754, 251);
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl.TabIndex = 0;
             // 
@@ -82,10 +78,20 @@
             this.tabpgScores.Location = new System.Drawing.Point(4, 25);
             this.tabpgScores.Name = "tabpgScores";
             this.tabpgScores.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpgScores.Size = new System.Drawing.Size(746, 198);
+            this.tabpgScores.Size = new System.Drawing.Size(746, 222);
             this.tabpgScores.TabIndex = 0;
             this.tabpgScores.Text = "Scores";
             this.tabpgScores.UseVisualStyleBackColor = true;
+            // 
+            // btnPaste
+            // 
+            this.btnPaste.Location = new System.Drawing.Point(485, 24);
+            this.btnPaste.Name = "btnPaste";
+            this.btnPaste.Size = new System.Drawing.Size(122, 23);
+            this.btnPaste.TabIndex = 9;
+            this.btnPaste.Text = "Вставить из буфера";
+            this.btnPaste.UseVisualStyleBackColor = true;
+            this.btnPaste.Click += new System.EventHandler(this.btnPaste_Click);
             // 
             // nudScoresCurrentScores
             // 
@@ -209,48 +215,12 @@
             this.label9.TabIndex = 7;
             this.label9.Text = "Введите ваш текущий уровень:";
             // 
-            // файлToolStripMenuItem
-            // 
-            this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.выходToolStripMenuItem});
-            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.файлToolStripMenuItem.Text = "Файл";
-            // 
-            // выходToolStripMenuItem
-            // 
-            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.выходToolStripMenuItem.Text = "Выход";
-            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(754, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // btnPaste
-            // 
-            this.btnPaste.Location = new System.Drawing.Point(485, 24);
-            this.btnPaste.Name = "btnPaste";
-            this.btnPaste.Size = new System.Drawing.Size(122, 23);
-            this.btnPaste.TabIndex = 9;
-            this.btnPaste.Text = "Вставить из буфера";
-            this.btnPaste.UseVisualStyleBackColor = true;
-            this.btnPaste.Click += new System.EventHandler(this.btnPaste_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(754, 251);
             this.Controls.Add(this.tabControl);
-            this.Controls.Add(this.menuStrip1);
             this.Name = "MainForm";
             this.Text = "Калькулятор osu!";
             this.tabControl.ResumeLayout(false);
@@ -259,10 +229,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudScoresCurrentScores)).EndInit();
             this.tabpgLevel.ResumeLayout(false);
             this.tabpgLevel.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -282,9 +249,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtboxLevelCurrentLevel;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
         private System.Windows.Forms.NumericUpDown nudScoresCurrentScores;
         private System.Windows.Forms.Button btnPaste;
     }
