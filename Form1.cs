@@ -32,21 +32,9 @@ namespace osu_calc
 
         private void btnPaste_Click(object sender, EventArgs e)
         {
-            string p; //переменная-буфер
-            p = Clipboard.GetText();
-            // Пустой буфер вызывает ошибку, поэтому...
-            if (p == "")
-            {
-                p = "0";
-            }
-            // Обожаю костыли ^^
-            for (int i = (p.Length)-1; i > 0; i--)
-            {
-                if ((p[i] != '0') && (p[i] != '1') && (p[i] != '2') && (p[i] != '3') && (p[i] != '4') && (p[i] != '5') && (p[i] != '6') && (p[i] != '7') && (p[i] != '8') && (p[i] != '9'))
-                {
-                    p = p.Remove(i, 1);
-                }
-            }
+            string p;
+            Scores scores = new Scores();
+            p = scores.TransString();
             nudScoresCurrentScores.Value = Convert.ToDecimal(p);
         }
 
