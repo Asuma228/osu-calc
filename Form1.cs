@@ -29,10 +29,6 @@ namespace osu_calc
             }
         }
 
-        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         private void btnPaste_Click(object sender, EventArgs e)
         {
@@ -52,6 +48,11 @@ namespace osu_calc
                 }
             }
             nudScoresCurrentScores.Value = Convert.ToDecimal(p);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
