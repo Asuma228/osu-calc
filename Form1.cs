@@ -42,5 +42,12 @@ namespace osu_calc
         {
             Close();
         }
+
+        private void cmbBoxCurLvl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Scores scores = new Scores();
+            string p = cmbBoxCurLvl.Text;
+            lblLevelScoresNeeded.Text = scores.NeededScoresLevels(p);
+        }
     }
 }

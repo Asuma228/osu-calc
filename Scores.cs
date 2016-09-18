@@ -31,6 +31,18 @@ namespace osu_calc
             }
         }
 
+        internal string ProcessString(string p) //Эта функция добавляет во входную строку пробелы между разрядами
+        {
+            for (int i = p.Length; i > 1; i--)
+            {
+                if (i % 3 == 0)
+                {
+                    p = p.Insert(p.Length - i, " ");
+                }
+            }
+            return p;
+        }
+
         internal string LvlNeeded(decimal p)
         {
 
@@ -50,19 +62,20 @@ namespace osu_calc
         {
 
             neededScores =  Convert.ToString(Convert.ToDecimal(arrayScores[Convert.ToInt32(currentLevel)+1]) - p);
-             
-            for (int i = neededScores.Length; i > 1 ; i--)
-            {
-                if (i % 3 == 0)
-                {
-                    neededScores = neededScores.Insert(neededScores.Length - i, " ");
-                }
-            }
+            ProcessString(neededScores); 
+
+            //for (int i = neededScores.Length; i > 1 ; i--)
+            //{
+            //    if (i % 3 == 0)
+            //    {
+            //        neededScores = neededScores.Insert(neededScores.Length - i, " ");
+            //    }
+            //}
 
             return neededScores;
         }
 
-        internal string TransString()
+        internal string TransString() // Эта функция удаляет из входной строки все символы кроме цифр
         {
             string p;
             p = Clipboard.GetText();
@@ -81,6 +94,13 @@ namespace osu_calc
             // Обожаю костыли ^^
             return p;
 
+        }
+
+        internal string NeededScoresLevels(string p)
+        {
+            string r;
+            r = Convert.ToString(Convert.ToDecimal(arrayScores[Convert.ToInt32(p) + 1])- Convert.ToDecimal(arrayScores[Convert.ToInt32(p)]));
+            return ProcessString(r);
         }
     }
 }

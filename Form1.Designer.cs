@@ -42,9 +42,9 @@
             this.lblLevelPercentNeeded = new System.Windows.Forms.Label();
             this.lblLevelScoresNeeded = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtboxLevelCurrentLevel = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
+            this.cmbBoxCurLvl = new System.Windows.Forms.ComboBox();
             this.tabControl.SuspendLayout();
             this.tabpgScores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudScoresCurrentScores)).BeginInit();
@@ -161,15 +161,15 @@
             // 
             // tabpgLevel
             // 
+            this.tabpgLevel.Controls.Add(this.cmbBoxCurLvl);
             this.tabpgLevel.Controls.Add(this.lblLevelPercentNeeded);
             this.tabpgLevel.Controls.Add(this.lblLevelScoresNeeded);
             this.tabpgLevel.Controls.Add(this.label8);
-            this.tabpgLevel.Controls.Add(this.txtboxLevelCurrentLevel);
             this.tabpgLevel.Controls.Add(this.label9);
             this.tabpgLevel.Location = new System.Drawing.Point(4, 25);
             this.tabpgLevel.Name = "tabpgLevel";
             this.tabpgLevel.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpgLevel.Size = new System.Drawing.Size(746, 222);
+            this.tabpgLevel.Size = new System.Drawing.Size(746, 174);
             this.tabpgLevel.TabIndex = 1;
             this.tabpgLevel.Text = "Level";
             this.tabpgLevel.UseVisualStyleBackColor = true;
@@ -185,7 +185,7 @@
             // lblLevelScoresNeeded
             // 
             this.lblLevelScoresNeeded.AutoSize = true;
-            this.lblLevelScoresNeeded.Location = new System.Drawing.Point(204, 111);
+            this.lblLevelScoresNeeded.Location = new System.Drawing.Point(352, 80);
             this.lblLevelScoresNeeded.Name = "lblLevelScoresNeeded";
             this.lblLevelScoresNeeded.Size = new System.Drawing.Size(0, 13);
             this.lblLevelScoresNeeded.TabIndex = 12;
@@ -193,24 +193,16 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(5, 83);
+            this.label8.Location = new System.Drawing.Point(8, 80);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(179, 13);
             this.label8.TabIndex = 9;
             this.label8.Text = "До следующего уровня осталось:";
             // 
-            // txtboxLevelCurrentLevel
-            // 
-            this.txtboxLevelCurrentLevel.Location = new System.Drawing.Point(210, 33);
-            this.txtboxLevelCurrentLevel.Name = "txtboxLevelCurrentLevel";
-            this.txtboxLevelCurrentLevel.Size = new System.Drawing.Size(358, 20);
-            this.txtboxLevelCurrentLevel.TabIndex = 8;
-            this.txtboxLevelCurrentLevel.WordWrap = false;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 33);
+            this.label9.Location = new System.Drawing.Point(11, 30);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(165, 13);
             this.label9.TabIndex = 7;
@@ -226,6 +218,146 @@
             this.btnExit.Text = "Выход";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // cmbBoxCurLvl
+            // 
+            this.cmbBoxCurLvl.FormattingEnabled = true;
+            this.cmbBoxCurLvl.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100",
+            "101",
+            "102",
+            "103",
+            "104",
+            "105",
+            "106",
+            "107",
+            "108",
+            "109",
+            "110",
+            "111",
+            "112",
+            "113",
+            "114",
+            "115",
+            "116",
+            "117",
+            "118",
+            "119",
+            "120",
+            "121",
+            "122",
+            "123",
+            "124",
+            "125",
+            "126",
+            "127",
+            "128",
+            "129",
+            "130"});
+            this.cmbBoxCurLvl.Location = new System.Drawing.Point(355, 27);
+            this.cmbBoxCurLvl.Name = "cmbBoxCurLvl";
+            this.cmbBoxCurLvl.Size = new System.Drawing.Size(56, 21);
+            this.cmbBoxCurLvl.TabIndex = 14;
+            this.cmbBoxCurLvl.SelectedIndexChanged += new System.EventHandler(this.cmbBoxCurLvl_SelectedIndexChanged);
             // 
             // MainForm
             // 
@@ -260,11 +392,11 @@
         private System.Windows.Forms.Label lblLevelPercentNeeded;
         private System.Windows.Forms.Label lblLevelScoresNeeded;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtboxLevelCurrentLevel;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.NumericUpDown nudScoresCurrentScores;
         private System.Windows.Forms.Button btnPaste;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.ComboBox cmbBoxCurLvl;
     }
 }
 
