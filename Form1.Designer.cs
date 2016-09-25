@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabpgScores = new System.Windows.Forms.TabPage();
             this.btnPaste = new System.Windows.Forms.Button();
@@ -39,12 +40,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabpgLevel = new System.Windows.Forms.TabPage();
+            this.cmbBoxCurLvl = new System.Windows.Forms.ComboBox();
             this.lblLevelPercentNeeded = new System.Windows.Forms.Label();
             this.lblLevelScoresNeeded = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
-            this.cmbBoxCurLvl = new System.Windows.Forms.ComboBox();
             this.tabControl.SuspendLayout();
             this.tabpgScores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudScoresCurrentScores)).BeginInit();
@@ -173,51 +174,6 @@
             this.tabpgLevel.TabIndex = 1;
             this.tabpgLevel.Text = "Level";
             this.tabpgLevel.UseVisualStyleBackColor = true;
-            // 
-            // lblLevelPercentNeeded
-            // 
-            this.lblLevelPercentNeeded.AutoSize = true;
-            this.lblLevelPercentNeeded.Location = new System.Drawing.Point(207, 149);
-            this.lblLevelPercentNeeded.Name = "lblLevelPercentNeeded";
-            this.lblLevelPercentNeeded.Size = new System.Drawing.Size(0, 13);
-            this.lblLevelPercentNeeded.TabIndex = 13;
-            // 
-            // lblLevelScoresNeeded
-            // 
-            this.lblLevelScoresNeeded.AutoSize = true;
-            this.lblLevelScoresNeeded.Location = new System.Drawing.Point(352, 80);
-            this.lblLevelScoresNeeded.Name = "lblLevelScoresNeeded";
-            this.lblLevelScoresNeeded.Size = new System.Drawing.Size(0, 13);
-            this.lblLevelScoresNeeded.TabIndex = 12;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(8, 80);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(179, 13);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "До следующего уровня осталось:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(11, 30);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(165, 13);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Введите ваш текущий уровень:";
-            // 
-            // btnExit
-            // 
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnExit.Location = new System.Drawing.Point(0, 205);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(754, 46);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "Выход";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // cmbBoxCurLvl
             // 
@@ -359,6 +315,51 @@
             this.cmbBoxCurLvl.TabIndex = 14;
             this.cmbBoxCurLvl.SelectedIndexChanged += new System.EventHandler(this.cmbBoxCurLvl_SelectedIndexChanged);
             // 
+            // lblLevelPercentNeeded
+            // 
+            this.lblLevelPercentNeeded.AutoSize = true;
+            this.lblLevelPercentNeeded.Location = new System.Drawing.Point(207, 149);
+            this.lblLevelPercentNeeded.Name = "lblLevelPercentNeeded";
+            this.lblLevelPercentNeeded.Size = new System.Drawing.Size(0, 13);
+            this.lblLevelPercentNeeded.TabIndex = 13;
+            // 
+            // lblLevelScoresNeeded
+            // 
+            this.lblLevelScoresNeeded.AutoSize = true;
+            this.lblLevelScoresNeeded.Location = new System.Drawing.Point(352, 80);
+            this.lblLevelScoresNeeded.Name = "lblLevelScoresNeeded";
+            this.lblLevelScoresNeeded.Size = new System.Drawing.Size(0, 13);
+            this.lblLevelScoresNeeded.TabIndex = 12;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(8, 80);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(179, 13);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "До следующего уровня осталось:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(11, 30);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(165, 13);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Введите ваш текущий уровень:";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnExit.Location = new System.Drawing.Point(0, 205);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(754, 46);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "Выход";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -366,6 +367,7 @@
             this.ClientSize = new System.Drawing.Size(754, 251);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tabControl);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Калькулятор osu!";
             this.tabControl.ResumeLayout(false);
