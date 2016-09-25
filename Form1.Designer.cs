@@ -69,6 +69,8 @@
             // 
             // tabpgScores
             // 
+            this.tabpgScores.BackgroundImage = global::osu_calc.Properties.Resources.Background1;
+            this.tabpgScores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabpgScores.Controls.Add(this.btnPaste);
             this.tabpgScores.Controls.Add(this.nudScoresCurrentScores);
             this.tabpgScores.Controls.Add(this.lblScoresNeededPercent);
@@ -162,6 +164,8 @@
             // 
             // tabpgLevel
             // 
+            this.tabpgLevel.BackgroundImage = global::osu_calc.Properties.Resources.Background1;
+            this.tabpgLevel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabpgLevel.Controls.Add(this.cmbBoxCurLvl);
             this.tabpgLevel.Controls.Add(this.lblLevelPercentNeeded);
             this.tabpgLevel.Controls.Add(this.lblLevelScoresNeeded);
@@ -352,9 +356,9 @@
             // btnExit
             // 
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnExit.Location = new System.Drawing.Point(0, 205);
+            this.btnExit.Location = new System.Drawing.Point(0, 199);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(754, 46);
+            this.btnExit.Size = new System.Drawing.Size(754, 35);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Выход";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -364,7 +368,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 251);
+            this.ClientSize = new System.Drawing.Size(754, 234);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tabControl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
