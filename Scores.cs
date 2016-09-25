@@ -43,6 +43,13 @@ namespace osu_calc
             return p;
         }
 
+        internal bool IfEx(decimal p)
+        {
+            if (p > arrayScores[300])
+                return false;
+            else return true;
+        }
+
         internal string LvlNeeded(decimal p)
         {
 

@@ -22,8 +22,16 @@ namespace osu_calc
         {
             {
                 Scores scores = new Scores();
-                lblScoresCurrentLevel.Text = scores.LvlNeeded(nudScoresCurrentScores.Value);
-                lblScoresNeededScores.Text = scores.NeededScores(nudScoresCurrentScores.Value);
+                if (scores.IfEx(nudScoresCurrentScores.Value))
+                {
+                    lblScoresCurrentLevel.Text = scores.LvlNeeded(nudScoresCurrentScores.Value);
+                    lblScoresNeededScores.Text = scores.ProcessString(scores.NeededScores(nudScoresCurrentScores.Value));
+                }
+                else
+                {
+                    lblScoresCurrentLevel.Text = "Слишком большое значение. Достиг 300-го уровня?";
+                    lblScoresNeededScores.Text = "";
+                }
 
 
             }
