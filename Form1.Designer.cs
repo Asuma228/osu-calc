@@ -63,7 +63,7 @@
             this.tabControl.Name = "tabControl";
             this.tabControl.Padding = new System.Drawing.Point(129, 3);
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(754, 203);
+            this.tabControl.Size = new System.Drawing.Size(623, 203);
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl.TabIndex = 0;
             // 
@@ -82,14 +82,14 @@
             this.tabpgScores.Location = new System.Drawing.Point(4, 25);
             this.tabpgScores.Name = "tabpgScores";
             this.tabpgScores.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpgScores.Size = new System.Drawing.Size(746, 174);
+            this.tabpgScores.Size = new System.Drawing.Size(615, 174);
             this.tabpgScores.TabIndex = 0;
             this.tabpgScores.Text = "Scores";
             this.tabpgScores.UseVisualStyleBackColor = true;
             // 
             // btnPaste
             // 
-            this.btnPaste.Location = new System.Drawing.Point(485, 24);
+            this.btnPaste.Location = new System.Drawing.Point(484, 31);
             this.btnPaste.Name = "btnPaste";
             this.btnPaste.Size = new System.Drawing.Size(122, 23);
             this.btnPaste.TabIndex = 9;
@@ -99,7 +99,7 @@
             // 
             // nudScoresCurrentScores
             // 
-            this.nudScoresCurrentScores.Location = new System.Drawing.Point(358, 24);
+            this.nudScoresCurrentScores.Location = new System.Drawing.Point(358, 31);
             this.nudScoresCurrentScores.Maximum = new decimal(new int[] {
             -1530494977,
             232830,
@@ -122,7 +122,7 @@
             // lblScoresNeededScores
             // 
             this.lblScoresNeededScores.AutoSize = true;
-            this.lblScoresNeededScores.Location = new System.Drawing.Point(355, 110);
+            this.lblScoresNeededScores.Location = new System.Drawing.Point(355, 93);
             this.lblScoresNeededScores.Name = "lblScoresNeededScores";
             this.lblScoresNeededScores.Size = new System.Drawing.Size(0, 13);
             this.lblScoresNeededScores.TabIndex = 5;
@@ -138,7 +138,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 76);
+            this.label5.Location = new System.Drawing.Point(6, 60);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 13);
             this.label5.TabIndex = 3;
@@ -147,7 +147,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 110);
+            this.label2.Location = new System.Drawing.Point(6, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(179, 13);
             this.label2.TabIndex = 2;
@@ -174,7 +174,7 @@
             this.tabpgLevel.Location = new System.Drawing.Point(4, 25);
             this.tabpgLevel.Name = "tabpgLevel";
             this.tabpgLevel.Padding = new System.Windows.Forms.Padding(3);
-            this.tabpgLevel.Size = new System.Drawing.Size(746, 174);
+            this.tabpgLevel.Size = new System.Drawing.Size(615, 174);
             this.tabpgLevel.TabIndex = 1;
             this.tabpgLevel.Text = "Level";
             this.tabpgLevel.UseVisualStyleBackColor = true;
@@ -313,7 +313,7 @@
             "128",
             "129",
             "130"});
-            this.cmbBoxCurLvl.Location = new System.Drawing.Point(355, 27);
+            this.cmbBoxCurLvl.Location = new System.Drawing.Point(355, 30);
             this.cmbBoxCurLvl.Name = "cmbBoxCurLvl";
             this.cmbBoxCurLvl.Size = new System.Drawing.Size(56, 21);
             this.cmbBoxCurLvl.TabIndex = 14;
@@ -330,7 +330,7 @@
             // lblLevelScoresNeeded
             // 
             this.lblLevelScoresNeeded.AutoSize = true;
-            this.lblLevelScoresNeeded.Location = new System.Drawing.Point(352, 80);
+            this.lblLevelScoresNeeded.Location = new System.Drawing.Point(352, 71);
             this.lblLevelScoresNeeded.Name = "lblLevelScoresNeeded";
             this.lblLevelScoresNeeded.Size = new System.Drawing.Size(0, 13);
             this.lblLevelScoresNeeded.TabIndex = 12;
@@ -338,7 +338,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(8, 80);
+            this.label8.Location = new System.Drawing.Point(8, 71);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(179, 13);
             this.label8.TabIndex = 9;
@@ -358,7 +358,7 @@
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnExit.Location = new System.Drawing.Point(0, 199);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(754, 35);
+            this.btnExit.Size = new System.Drawing.Size(623, 35);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Выход";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -368,7 +368,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 234);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(623, 234);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tabControl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
