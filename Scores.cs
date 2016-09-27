@@ -70,15 +70,6 @@ namespace osu_calc
 
             neededScores =  Convert.ToString(Convert.ToDecimal(arrayScores[Convert.ToInt32(currentLevel)+1]) - p);
             ProcessString(neededScores); 
-
-            //for (int i = neededScores.Length; i > 1 ; i--)
-            //{
-            //    if (i % 3 == 0)
-            //    {
-            //        neededScores = neededScores.Insert(neededScores.Length - i, " ");
-            //    }
-            //}
-
             return neededScores;
         }
 

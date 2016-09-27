@@ -33,7 +33,6 @@ namespace osu_calc
                     lblScoresNeededScores.Text = "";
                 }
 
-
             }
         }
 
@@ -59,3 +58,4 @@ namespace osu_calc
         }
     }
 }
+
