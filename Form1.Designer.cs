@@ -52,9 +52,9 @@ namespace osu_calc
             // 
             this.btnExit.BackColor = System.Drawing.SystemColors.Control;
             this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnExit.Location = new System.Drawing.Point(229, 221);
+            this.btnExit.Location = new System.Drawing.Point(327, 209);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(89, 35);
+            this.btnExit.Size = new System.Drawing.Size(100, 40);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Выход";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -322,7 +322,7 @@ namespace osu_calc
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(528, 268);
+            this.ClientSize = new System.Drawing.Size(738, 261);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbBoxCurLvl);
             this.Controls.Add(this.lblLevelScoresNeeded);
