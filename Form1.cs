@@ -29,7 +29,7 @@ namespace osu_calc
                 }
                 else
                 {
-                    lblScoresCurrentLevel.Text = "Слишком большое значение. Достиг 300-го уровня?";
+                    lblScoresCurrentLevel.Text = "Слишком большое значение.";
                     lblScoresNeededScores.Text = "";
                 }
 
@@ -55,6 +55,11 @@ namespace osu_calc
             Scores scores = new Scores();
             string p = cmbBoxCurLvl.Text;
             lblLevelScoresNeeded.Text = scores.NeededScoresLevels(p);
+        }
+
+        private void lblLevelScoresNeeded_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
