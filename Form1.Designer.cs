@@ -37,7 +37,6 @@ namespace osu_calc
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnPaste = new System.Windows.Forms.Button();
-            this.nudScoresCurrentScores = new System.Windows.Forms.NumericUpDown();
             this.lblScoresNeededPercent = new System.Windows.Forms.Label();
             this.lblScoresNeededScores = new System.Windows.Forms.Label();
             this.lblScoresCurrentLevel = new System.Windows.Forms.Label();
@@ -45,18 +44,23 @@ namespace osu_calc
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.nudScoresCurrentScores)).BeginInit();
+            this.txtBoxScoresCurrentScores = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.SystemColors.Control;
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BackgroundImage = global::osu_calc.Properties.Resources.exit_passive;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.Color.Transparent;
             this.btnExit.Location = new System.Drawing.Point(355, 248);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 40);
             this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "Выход";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -205,20 +209,19 @@ namespace osu_calc
             this.lblLevelScoresNeeded.AutoSize = true;
             this.lblLevelScoresNeeded.BackColor = System.Drawing.Color.Transparent;
             this.lblLevelScoresNeeded.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblLevelScoresNeeded.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblLevelScoresNeeded.ForeColor = System.Drawing.Color.Black;
             this.lblLevelScoresNeeded.Location = new System.Drawing.Point(277, 188);
             this.lblLevelScoresNeeded.Name = "lblLevelScoresNeeded";
             this.lblLevelScoresNeeded.Size = new System.Drawing.Size(121, 16);
             this.lblLevelScoresNeeded.TabIndex = 29;
             this.lblLevelScoresNeeded.Text = "До следующего";
-            this.lblLevelScoresNeeded.Click += new System.EventHandler(this.lblLevelScoresNeeded_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(12, 188);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(254, 16);
@@ -230,7 +233,7 @@ namespace osu_calc
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(12, 161);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(239, 16);
@@ -247,27 +250,13 @@ namespace osu_calc
             this.btnPaste.UseVisualStyleBackColor = true;
             this.btnPaste.Click += new System.EventHandler(this.btnPaste_Click);
             // 
-            // nudScoresCurrentScores
-            // 
-            this.nudScoresCurrentScores.Location = new System.Drawing.Point(280, 7);
-            this.nudScoresCurrentScores.Maximum = new decimal(new int[] {
-            -1530494977,
-            232830,
-            0,
-            0});
-            this.nudScoresCurrentScores.Name = "nudScoresCurrentScores";
-            this.nudScoresCurrentScores.Size = new System.Drawing.Size(140, 21);
-            this.nudScoresCurrentScores.TabIndex = 25;
-            this.nudScoresCurrentScores.ThousandsSeparator = true;
-            this.nudScoresCurrentScores.ValueChanged += new System.EventHandler(this.nudScoresCurrentScores_ValueChanged);
-            // 
             // lblScoresNeededPercent
             // 
             this.lblScoresNeededPercent.AutoSize = true;
             this.lblScoresNeededPercent.BackColor = System.Drawing.Color.Transparent;
             this.lblScoresNeededPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblScoresNeededPercent.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblScoresNeededPercent.Location = new System.Drawing.Point(404, 190);
+            this.lblScoresNeededPercent.ForeColor = System.Drawing.Color.Black;
+            this.lblScoresNeededPercent.Location = new System.Drawing.Point(404, 188);
             this.lblScoresNeededPercent.Name = "lblScoresNeededPercent";
             this.lblScoresNeededPercent.Size = new System.Drawing.Size(0, 16);
             this.lblScoresNeededPercent.TabIndex = 24;
@@ -277,7 +266,7 @@ namespace osu_calc
             this.lblScoresNeededScores.AutoSize = true;
             this.lblScoresNeededScores.BackColor = System.Drawing.Color.Transparent;
             this.lblScoresNeededScores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblScoresNeededScores.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblScoresNeededScores.ForeColor = System.Drawing.Color.Black;
             this.lblScoresNeededScores.Location = new System.Drawing.Point(277, 81);
             this.lblScoresNeededScores.Name = "lblScoresNeededScores";
             this.lblScoresNeededScores.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -290,7 +279,7 @@ namespace osu_calc
             this.lblScoresCurrentLevel.AutoSize = true;
             this.lblScoresCurrentLevel.BackColor = System.Drawing.Color.Transparent;
             this.lblScoresCurrentLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblScoresCurrentLevel.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblScoresCurrentLevel.ForeColor = System.Drawing.Color.Black;
             this.lblScoresCurrentLevel.Location = new System.Drawing.Point(277, 53);
             this.lblScoresCurrentLevel.Name = "lblScoresCurrentLevel";
             this.lblScoresCurrentLevel.Size = new System.Drawing.Size(138, 16);
@@ -302,7 +291,7 @@ namespace osu_calc
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(12, 53);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 16);
@@ -314,7 +303,7 @@ namespace osu_calc
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(12, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(254, 16);
@@ -326,7 +315,7 @@ namespace osu_calc
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(262, 32);
@@ -338,12 +327,20 @@ namespace osu_calc
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(12, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 16);
             this.label3.TabIndex = 31;
             this.label3.Text = "Или";
+            // 
+            // txtBoxScoresCurrentScores
+            // 
+            this.txtBoxScoresCurrentScores.Location = new System.Drawing.Point(280, 7);
+            this.txtBoxScoresCurrentScores.Name = "txtBoxScoresCurrentScores";
+            this.txtBoxScoresCurrentScores.Size = new System.Drawing.Size(135, 21);
+            this.txtBoxScoresCurrentScores.TabIndex = 32;
+            this.txtBoxScoresCurrentScores.TextChanged += new System.EventHandler(this.txtBoxScoresCurrentScores_TextChanged);
             // 
             // MainForm
             // 
@@ -352,13 +349,13 @@ namespace osu_calc
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::osu_calc.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(755, 300);
+            this.Controls.Add(this.txtBoxScoresCurrentScores);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbBoxCurLvl);
             this.Controls.Add(this.lblLevelScoresNeeded);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnPaste);
-            this.Controls.Add(this.nudScoresCurrentScores);
             this.Controls.Add(this.lblScoresNeededPercent);
             this.Controls.Add(this.lblScoresNeededScores);
             this.Controls.Add(this.lblScoresCurrentLevel);
@@ -371,7 +368,6 @@ namespace osu_calc
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Калькулятор osu!";
-            ((System.ComponentModel.ISupportInitialize)(this.nudScoresCurrentScores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,7 +380,6 @@ namespace osu_calc
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnPaste;
-        private System.Windows.Forms.NumericUpDown nudScoresCurrentScores;
         private System.Windows.Forms.Label lblScoresNeededPercent;
         private System.Windows.Forms.Label lblScoresNeededScores;
         private System.Windows.Forms.Label lblScoresCurrentLevel;
@@ -393,6 +388,7 @@ namespace osu_calc
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private EventHandler MainForm_Load;
+        private System.Windows.Forms.TextBox txtBoxScoresCurrentScores;
     }
 }
 

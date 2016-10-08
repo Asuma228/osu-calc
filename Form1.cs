@@ -18,14 +18,19 @@ namespace osu_calc
             InitializeComponent();
         }
 
-        private void nudScoresCurrentScores_ValueChanged(object sender, EventArgs e)
+        private void txtBoxScoresCurrentScores_TextChanged(object sender, EventArgs e)
         {
             {
                 Scores scores = new Scores();
-                if (scores.IfEx(nudScoresCurrentScores.Value))
+                if (txtBoxScoresCurrentScores.Text == "")
                 {
-                    lblScoresCurrentLevel.Text = scores.LvlNeeded(nudScoresCurrentScores.Value);
-                    lblScoresNeededScores.Text = scores.ProcessString(scores.NeededScores(nudScoresCurrentScores.Value));
+                    txtBoxScoresCurrentScores.Text = "0";
+                }
+                txtBoxScoresCurrentScores.Text = scores.TransString(txtBoxScoresCurrentScores.Text);
+                if (scores.IfEx(Convert.ToDecimal(txtBoxScoresCurrentScores.Text)))
+                {
+                    lblScoresCurrentLevel.Text = scores.LvlNeeded(Convert.ToDecimal(txtBoxScoresCurrentScores.Text));
+                    lblScoresNeededScores.Text = scores.ProcessString(scores.NeededScores(Convert.ToDecimal(txtBoxScoresCurrentScores.Text)));
                 }
                 else
                 {
@@ -36,13 +41,13 @@ namespace osu_calc
             }
         }
 
-
         private void btnPaste_Click(object sender, EventArgs e)
         {
             string p;
             Scores scores = new Scores();
-            p = scores.TransString();
-            nudScoresCurrentScores.Value = Convert.ToDecimal(p);
+            p = Clipboard.GetText();
+            p = scores.TransString(p);
+            txtBoxScoresCurrentScores.Text = p;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -57,10 +62,7 @@ namespace osu_calc
             lblLevelScoresNeeded.Text = scores.NeededScoresLevels(p);
         }
 
-        private void lblLevelScoresNeeded_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
 
