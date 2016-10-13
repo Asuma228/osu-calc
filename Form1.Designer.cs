@@ -31,7 +31,6 @@ namespace osu_calc
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.btnExit = new System.Windows.Forms.Button();
             this.cmbBoxCurLvl = new System.Windows.Forms.ComboBox();
             this.lblLevelScoresNeeded = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -46,23 +45,6 @@ namespace osu_calc
             this.label3 = new System.Windows.Forms.Label();
             this.txtBoxScoresCurrentScores = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.BackgroundImage = global::osu_calc.Properties.Resources.exit_passive;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.ForeColor = System.Drawing.Color.Transparent;
-            this.btnExit.Location = new System.Drawing.Point(355, 248);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(100, 40);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // cmbBoxCurLvl
             // 
@@ -348,7 +330,7 @@ namespace osu_calc
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::osu_calc.Properties.Resources.background;
-            this.ClientSize = new System.Drawing.Size(755, 300);
+            this.ClientSize = new System.Drawing.Size(755, 213);
             this.Controls.Add(this.txtBoxScoresCurrentScores);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbBoxCurLvl);
@@ -362,7 +344,6 @@ namespace osu_calc
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnExit);
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -374,7 +355,6 @@ namespace osu_calc
         }
 
         #endregion
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.ComboBox cmbBoxCurLvl;
         private System.Windows.Forms.Label lblLevelScoresNeeded;
         private System.Windows.Forms.Label label8;

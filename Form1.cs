@@ -50,19 +50,12 @@ namespace osu_calc
             txtBoxScoresCurrentScores.Text = p;
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void cmbBoxCurLvl_SelectedIndexChanged(object sender, EventArgs e)
         {
             Scores scores = new Scores();
             string p = cmbBoxCurLvl.Text;
             lblLevelScoresNeeded.Text = scores.NeededScoresLevels(p);
         }
-
-       
     }
 }
 
