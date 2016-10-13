@@ -181,9 +181,9 @@ namespace osu_calc
             "128",
             "129",
             "130"});
-            this.cmbBoxCurLvl.Location = new System.Drawing.Point(280, 160);
+            this.cmbBoxCurLvl.Location = new System.Drawing.Point(280, 187);
             this.cmbBoxCurLvl.Name = "cmbBoxCurLvl";
-            this.cmbBoxCurLvl.Size = new System.Drawing.Size(65, 21);
+            this.cmbBoxCurLvl.Size = new System.Drawing.Size(47, 21);
             this.cmbBoxCurLvl.TabIndex = 30;
             this.cmbBoxCurLvl.SelectedIndexChanged += new System.EventHandler(this.cmbBoxCurLvl_SelectedIndexChanged);
             // 
@@ -193,7 +193,7 @@ namespace osu_calc
             this.lblLevelScoresNeeded.BackColor = System.Drawing.Color.Transparent;
             this.lblLevelScoresNeeded.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblLevelScoresNeeded.ForeColor = System.Drawing.Color.Black;
-            this.lblLevelScoresNeeded.Location = new System.Drawing.Point(277, 188);
+            this.lblLevelScoresNeeded.Location = new System.Drawing.Point(277, 227);
             this.lblLevelScoresNeeded.Name = "lblLevelScoresNeeded";
             this.lblLevelScoresNeeded.Size = new System.Drawing.Size(121, 16);
             this.lblLevelScoresNeeded.TabIndex = 29;
@@ -205,7 +205,7 @@ namespace osu_calc
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(12, 188);
+            this.label8.Location = new System.Drawing.Point(12, 227);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(254, 16);
             this.label8.TabIndex = 28;
@@ -217,7 +217,7 @@ namespace osu_calc
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(12, 161);
+            this.label9.Location = new System.Drawing.Point(12, 188);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(239, 16);
             this.label9.TabIndex = 27;
@@ -225,9 +225,10 @@ namespace osu_calc
             // 
             // btnPaste
             // 
-            this.btnPaste.Location = new System.Drawing.Point(426, 7);
+            this.btnPaste.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnPaste.Location = new System.Drawing.Point(485, 7);
             this.btnPaste.Name = "btnPaste";
-            this.btnPaste.Size = new System.Drawing.Size(142, 23);
+            this.btnPaste.Size = new System.Drawing.Size(176, 23);
             this.btnPaste.TabIndex = 26;
             this.btnPaste.Text = "Вставить из буфера";
             this.btnPaste.UseVisualStyleBackColor = true;
@@ -250,7 +251,7 @@ namespace osu_calc
             this.lblScoresNeededScores.BackColor = System.Drawing.Color.Transparent;
             this.lblScoresNeededScores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblScoresNeededScores.ForeColor = System.Drawing.Color.Black;
-            this.lblScoresNeededScores.Location = new System.Drawing.Point(277, 81);
+            this.lblScoresNeededScores.Location = new System.Drawing.Point(277, 102);
             this.lblScoresNeededScores.Name = "lblScoresNeededScores";
             this.lblScoresNeededScores.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblScoresNeededScores.Size = new System.Drawing.Size(178, 16);
@@ -263,7 +264,7 @@ namespace osu_calc
             this.lblScoresCurrentLevel.BackColor = System.Drawing.Color.Transparent;
             this.lblScoresCurrentLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblScoresCurrentLevel.ForeColor = System.Drawing.Color.Black;
-            this.lblScoresCurrentLevel.Location = new System.Drawing.Point(277, 53);
+            this.lblScoresCurrentLevel.Location = new System.Drawing.Point(277, 66);
             this.lblScoresCurrentLevel.Name = "lblScoresCurrentLevel";
             this.lblScoresCurrentLevel.Size = new System.Drawing.Size(138, 16);
             this.lblScoresCurrentLevel.TabIndex = 22;
@@ -275,7 +276,7 @@ namespace osu_calc
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(12, 53);
+            this.label5.Location = new System.Drawing.Point(12, 66);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 16);
             this.label5.TabIndex = 21;
@@ -287,7 +288,7 @@ namespace osu_calc
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(12, 81);
+            this.label2.Location = new System.Drawing.Point(12, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(254, 16);
             this.label2.TabIndex = 20;
@@ -311,7 +312,7 @@ namespace osu_calc
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(12, 120);
+            this.label3.Location = new System.Drawing.Point(12, 138);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 16);
             this.label3.TabIndex = 31;
@@ -319,20 +320,26 @@ namespace osu_calc
             // 
             // txtBoxScoresCurrentScores
             // 
+            this.txtBoxScoresCurrentScores.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBoxScoresCurrentScores.Location = new System.Drawing.Point(280, 7);
             this.txtBoxScoresCurrentScores.Name = "txtBoxScoresCurrentScores";
-            this.txtBoxScoresCurrentScores.Size = new System.Drawing.Size(135, 21);
+            this.txtBoxScoresCurrentScores.Size = new System.Drawing.Size(175, 21);
             this.txtBoxScoresCurrentScores.TabIndex = 32;
             this.txtBoxScoresCurrentScores.TextChanged += new System.EventHandler(this.txtBoxScoresCurrentScores_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(723, 0);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(739, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(32, 32);
+            this.button1.Size = new System.Drawing.Size(20, 20);
             this.button1.TabIndex = 33;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainForm
@@ -340,8 +347,8 @@ namespace osu_calc
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::osu_calc.Properties.Resources.background;
-            this.ClientSize = new System.Drawing.Size(755, 213);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(771, 252);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtBoxScoresCurrentScores);
             this.Controls.Add(this.label3);

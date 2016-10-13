@@ -148,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon1.ico" />
+    <None Include="Resources\background2.jpg" />
     <None Include="Resources\Выход обычн.png" />
     <None Include="Resources\exit_normal.png" />
     <None Include="Resources\exit_passive.png" />
