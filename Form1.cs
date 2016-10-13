@@ -56,6 +56,35 @@ namespace osu_calc
             string p = cmbBoxCurLvl.Text;
             lblLevelScoresNeeded.Text = scores.NeededScoresLevels(p);
         }
+
+        // Ахтунг! Чужой код!! Взято с http://www.cyberforum.ru/windows-forms/thread82595.html
+
+        int iFormX, iFormY, iMouseX, iMouseY;//глобальные переменные
+
+        private void MainForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            iFormX = this.Location.X;
+            iFormY = this.Location.Y;
+            iMouseX = MousePosition.X;
+            iMouseY = MousePosition.Y;
+
+        }
+
+        private void MainForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            int iMouseX2 = MousePosition.X;
+            int iMouseY2 = MousePosition.Y;
+            if (e.Button == MouseButtons.Left)
+                this.Location = new Point(iFormX + (iMouseX2 - iMouseX), iFormY + (iMouseY2 - iMouseY));
+
+        }
+
+        // Ахтунг! Чужой код!! Взято с http://www.cyberforum.ru/windows-forms/thread82595.html
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 

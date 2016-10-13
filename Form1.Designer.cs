@@ -44,6 +44,7 @@ namespace osu_calc
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtBoxScoresCurrentScores = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmbBoxCurLvl
@@ -324,6 +325,16 @@ namespace osu_calc
             this.txtBoxScoresCurrentScores.TabIndex = 32;
             this.txtBoxScoresCurrentScores.TextChanged += new System.EventHandler(this.txtBoxScoresCurrentScores_TextChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(723, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(32, 32);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -331,6 +342,7 @@ namespace osu_calc
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::osu_calc.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(755, 213);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtBoxScoresCurrentScores);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbBoxCurLvl);
@@ -345,10 +357,13 @@ namespace osu_calc
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Калькулятор osu!";
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseMove);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,6 +384,7 @@ namespace osu_calc
         private System.Windows.Forms.Label label3;
         private EventHandler MainForm_Load;
         private System.Windows.Forms.TextBox txtBoxScoresCurrentScores;
+        private System.Windows.Forms.Button button1;
     }
 }
 
