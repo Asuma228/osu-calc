@@ -225,13 +225,20 @@ namespace osu_calc
             // 
             // btnPaste
             // 
+            this.btnPaste.BackColor = System.Drawing.Color.Transparent;
+            this.btnPaste.BackgroundImage = global::osu_calc.Properties.Resources.btn_paste;
+            this.btnPaste.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPaste.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPaste.FlatAppearance.BorderSize = 0;
+            this.btnPaste.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPaste.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnPaste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPaste.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnPaste.Location = new System.Drawing.Point(485, 7);
             this.btnPaste.Name = "btnPaste";
             this.btnPaste.Size = new System.Drawing.Size(176, 23);
             this.btnPaste.TabIndex = 26;
-            this.btnPaste.Text = "Вставить из буфера";
-            this.btnPaste.UseVisualStyleBackColor = true;
+            this.btnPaste.UseVisualStyleBackColor = false;
             this.btnPaste.Click += new System.EventHandler(this.btnPaste_Click);
             // 
             // lblScoresNeededPercent
@@ -330,6 +337,7 @@ namespace osu_calc
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;

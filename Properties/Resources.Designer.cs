@@ -73,9 +73,19 @@ namespace osu_calc.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap exit_passive {
+        public static System.Drawing.Bitmap btn_exit {
             get {
-                object obj = ResourceManager.GetObject("exit_passive", resourceCulture);
+                object obj = ResourceManager.GetObject("btn_exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap btn_paste {
+            get {
+                object obj = ResourceManager.GetObject("btn_paste", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +103,9 @@ namespace osu_calc.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Выход_обычн {
+        public static System.Drawing.Bitmap txtbox_current_score {
             get {
-                object obj = ResourceManager.GetObject("Выход_обычн", resourceCulture);
+                object obj = ResourceManager.GetObject("txtbox_current_score", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
