@@ -43,6 +43,31 @@ namespace osu_calc
             return p;
         }
 
+        internal string Case(decimal v)
+        {
+            int x = Convert.ToInt32(v)/10;
+            string p;
+            if (x % 10 == 1)
+
+            {
+                p = " очков";
+            }
+
+            else if (v % 10 == 1)
+            {
+                p = " очко";
+            }
+
+            else if ((v % 10 == 2) || (v % 10 == 3) || (v % 10 == 4)) // Исправить, сцуко!!
+            {
+                p = " очка";
+            }
+
+            else p = " очков";
+
+            return p;
+        }
+
         internal bool IfEx(decimal p)
         {
             if (p > arrayScores[300])

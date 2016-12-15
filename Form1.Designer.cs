@@ -31,7 +31,6 @@ namespace osu_calc
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.cmbBoxCurLvl = new System.Windows.Forms.ComboBox();
             this.lblLevelScoresNeeded = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -45,147 +44,9 @@ namespace osu_calc
             this.label3 = new System.Windows.Forms.Label();
             this.txtBoxScoresCurrentScores = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.nudCurrentLevel = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCurrentLevel)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cmbBoxCurLvl
-            // 
-            this.cmbBoxCurLvl.FormattingEnabled = true;
-            this.cmbBoxCurLvl.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31",
-            "32",
-            "33",
-            "34",
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40",
-            "41",
-            "42",
-            "43",
-            "44",
-            "45",
-            "46",
-            "47",
-            "48",
-            "49",
-            "50",
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            "60",
-            "61",
-            "62",
-            "63",
-            "64",
-            "65",
-            "66",
-            "67",
-            "68",
-            "69",
-            "70",
-            "71",
-            "72",
-            "73",
-            "74",
-            "75",
-            "76",
-            "77",
-            "78",
-            "79",
-            "80",
-            "81",
-            "82",
-            "83",
-            "84",
-            "85",
-            "86",
-            "87",
-            "88",
-            "89",
-            "90",
-            "91",
-            "92",
-            "93",
-            "94",
-            "95",
-            "96",
-            "97",
-            "98",
-            "99",
-            "100",
-            "101",
-            "102",
-            "103",
-            "104",
-            "105",
-            "106",
-            "107",
-            "108",
-            "109",
-            "110",
-            "111",
-            "112",
-            "113",
-            "114",
-            "115",
-            "116",
-            "117",
-            "118",
-            "119",
-            "120",
-            "121",
-            "122",
-            "123",
-            "124",
-            "125",
-            "126",
-            "127",
-            "128",
-            "129",
-            "130"});
-            this.cmbBoxCurLvl.Location = new System.Drawing.Point(280, 187);
-            this.cmbBoxCurLvl.Name = "cmbBoxCurLvl";
-            this.cmbBoxCurLvl.Size = new System.Drawing.Size(47, 21);
-            this.cmbBoxCurLvl.TabIndex = 30;
-            this.cmbBoxCurLvl.SelectedIndexChanged += new System.EventHandler(this.cmbBoxCurLvl_SelectedIndexChanged);
             // 
             // lblLevelScoresNeeded
             // 
@@ -231,7 +92,7 @@ namespace osu_calc
             this.btnPaste.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPaste.FlatAppearance.BorderSize = 0;
             this.btnPaste.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnPaste.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnPaste.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnPaste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPaste.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnPaste.Location = new System.Drawing.Point(485, 7);
@@ -350,6 +211,14 @@ namespace osu_calc
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // nudCurrentLevel
+            // 
+            this.nudCurrentLevel.Location = new System.Drawing.Point(280, 188);
+            this.nudCurrentLevel.Name = "nudCurrentLevel";
+            this.nudCurrentLevel.Size = new System.Drawing.Size(45, 21);
+            this.nudCurrentLevel.TabIndex = 34;
+            this.nudCurrentLevel.ValueChanged += new System.EventHandler(this.nudCurrentLevel_ValueChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -357,10 +226,10 @@ namespace osu_calc
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(771, 252);
+            this.Controls.Add(this.nudCurrentLevel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtBoxScoresCurrentScores);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.cmbBoxCurLvl);
             this.Controls.Add(this.lblLevelScoresNeeded);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -379,13 +248,13 @@ namespace osu_calc
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseMove);
+            ((System.ComponentModel.ISupportInitialize)(this.nudCurrentLevel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox cmbBoxCurLvl;
         private System.Windows.Forms.Label lblLevelScoresNeeded;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -400,6 +269,7 @@ namespace osu_calc
         private EventHandler MainForm_Load;
         private System.Windows.Forms.TextBox txtBoxScoresCurrentScores;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown nudCurrentLevel;
     }
 }
 

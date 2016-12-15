@@ -29,8 +29,8 @@ namespace osu_calc
                 txtBoxScoresCurrentScores.Text = scores.TransString(txtBoxScoresCurrentScores.Text);
                 if (scores.IfEx(Convert.ToDecimal(txtBoxScoresCurrentScores.Text)))
                 {
-                    lblScoresCurrentLevel.Text = scores.LvlNeeded(Convert.ToDecimal(txtBoxScoresCurrentScores.Text));
-                    lblScoresNeededScores.Text = scores.ProcessString(scores.NeededScores(Convert.ToDecimal(txtBoxScoresCurrentScores.Text)));
+                    lblScoresCurrentLevel.Text = scores.LvlNeeded(Convert.ToDecimal(txtBoxScoresCurrentScores.Text))+"-ый уровень";
+                    lblScoresNeededScores.Text = scores.ProcessString(scores.NeededScores(Convert.ToDecimal(txtBoxScoresCurrentScores.Text)))+scores.Case(Convert.ToDecimal(scores.ProcessString(scores.NeededScores(Convert.ToDecimal(txtBoxScoresCurrentScores.Text)))));
                 }
                 else
                 {
@@ -50,16 +50,20 @@ namespace osu_calc
             txtBoxScoresCurrentScores.Text = p;
         }
 
-        private void cmbBoxCurLvl_SelectedIndexChanged(object sender, EventArgs e)
+        private void nudCurrentLevel_ValueChanged(object sender, EventArgs e)
         {
             Scores scores = new Scores();
-            string p = cmbBoxCurLvl.Text;
-            lblLevelScoresNeeded.Text = scores.NeededScoresLevels(p);
+            decimal p = nudCurrentLevel.Value;
+            lblLevelScoresNeeded.Text = scores.NeededScoresLevels(Convert.ToString(p));
+
         }
+
+ 
 
         // Ахтунг! Чужой код!! Взято с http://www.cyberforum.ru/windows-forms/thread82595.html
 
         int iFormX, iFormY, iMouseX, iMouseY;//глобальные переменные
+
 
         private void MainForm_MouseDown(object sender, MouseEventArgs e)
         {
