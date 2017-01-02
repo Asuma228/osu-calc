@@ -45,6 +45,7 @@ namespace osu_calc
             this.txtBoxScoresCurrentScores = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.nudCurrentLevel = new System.Windows.Forms.NumericUpDown();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.nudCurrentLevel)).BeginInit();
             this.SuspendLayout();
             // 
@@ -219,6 +220,15 @@ namespace osu_calc
             this.nudCurrentLevel.TabIndex = 34;
             this.nudCurrentLevel.ValueChanged += new System.EventHandler(this.nudCurrentLevel_ValueChanged);
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(280, 138);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(381, 23);
+            this.progressBar1.Step = 1;
+            this.progressBar1.TabIndex = 35;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -226,6 +236,7 @@ namespace osu_calc
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(771, 252);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.nudCurrentLevel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtBoxScoresCurrentScores);
@@ -254,6 +265,11 @@ namespace osu_calc
 
         }
 
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
         private System.Windows.Forms.Label lblLevelScoresNeeded;
         private System.Windows.Forms.Label label8;
@@ -270,6 +286,7 @@ namespace osu_calc
         private System.Windows.Forms.TextBox txtBoxScoresCurrentScores;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NumericUpDown nudCurrentLevel;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 

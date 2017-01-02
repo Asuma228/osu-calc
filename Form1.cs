@@ -31,6 +31,7 @@ namespace osu_calc
                 {
                     lblScoresCurrentLevel.Text = scores.LvlNeeded(Convert.ToDecimal(txtBoxScoresCurrentScores.Text))+"-ый уровень";
                     lblScoresNeededScores.Text = scores.ProcessString(scores.NeededScores(txtBoxScoresCurrentScores.Text)) + ' '+ scores.Case(scores.ProcessString(scores.NeededScores(txtBoxScoresCurrentScores.Text))) + '('+ scores.Percentage(scores.ProcessString(scores.NeededScores(txtBoxScoresCurrentScores.Text))) + "%)";
+                    progressBar1.Value = 100 - Convert.ToInt32(Math.Truncate(Convert.ToDecimal(scores.Percentage(scores.ProcessString(scores.NeededScores(txtBoxScoresCurrentScores.Text))))));
                 }
                 else
                 {
@@ -63,7 +64,6 @@ namespace osu_calc
         // Ахтунг! Чужой код!! Взято с http://www.cyberforum.ru/windows-forms/thread82595.html
 
         int iFormX, iFormY, iMouseX, iMouseY;//глобальные переменные
-
 
         private void MainForm_MouseDown(object sender, MouseEventArgs e)
         {
