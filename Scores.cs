@@ -43,29 +43,40 @@ namespace osu_calc
             return p;
         }
 
-        internal string Case(decimal v)
+        internal string Case(string p)
         {
-            int x = Convert.ToInt32(v)/10;
-            string p;
+            decimal v = Convert.ToDecimal(p);
+            long x = Convert.ToInt64(v)/10;
+            string o;
             if (x % 10 == 1)
 
             {
-                p = " очков";
+                o = " очков";
             }
 
             else if (v % 10 == 1)
             {
-                p = " очко";
+                o = " очко";
             }
 
             else if ((v % 10 == 2) || (v % 10 == 3) || (v % 10 == 4)) // Исправить, сцуко!!
             {
-                p = " очка";
+                o = " очка";
             }
 
-            else p = " очков";
+            else o = " очков";
 
-            return p;
+            return o;
+        }
+
+        internal string Percentage(string p)
+        {
+            decimal v = Convert.ToDecimal(p);
+            string o;
+            o = Convert.ToString((1000000*(v / arrayScores[(Convert.ToInt32(currentLevel)+1)])));
+            v = Math.Truncate(Convert.ToDecimal(o));
+            o = Convert.ToString((v / 10000));
+            return o;
         }
 
         internal bool IfEx(decimal p)
@@ -90,10 +101,10 @@ namespace osu_calc
             return (currentLevel);
         }
 
-        internal string NeededScores(decimal p)
+        internal string NeededScores(string p)
         {
-
-            neededScores =  Convert.ToString(Convert.ToDecimal(arrayScores[Convert.ToInt32(currentLevel)+1]) - p);
+            decimal pd = Convert.ToDecimal(p);
+            neededScores =  Convert.ToString(Convert.ToDecimal(arrayScores[Convert.ToInt32(currentLevel)+1]) - pd);
             ProcessString(neededScores); 
             return neededScores;
         }
@@ -120,7 +131,7 @@ namespace osu_calc
         internal string NeededScoresLevels(string p)
         {
             string r;
-            r = Convert.ToString(Convert.ToDecimal(arrayScores[Convert.ToInt32(p) + 1])- Convert.ToDecimal(arrayScores[Convert.ToInt32(p)]));
+            r = Convert.ToString(Convert.ToDecimal(arrayScores[Convert.ToInt32(p) + 1]) - Convert.ToDecimal(arrayScores[Convert.ToInt32(p)]));
             return ProcessString(r);
         }
     }

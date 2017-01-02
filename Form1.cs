@@ -30,7 +30,7 @@ namespace osu_calc
                 if (scores.IfEx(Convert.ToDecimal(txtBoxScoresCurrentScores.Text)))
                 {
                     lblScoresCurrentLevel.Text = scores.LvlNeeded(Convert.ToDecimal(txtBoxScoresCurrentScores.Text))+"-ый уровень";
-                    lblScoresNeededScores.Text = scores.ProcessString(scores.NeededScores(Convert.ToDecimal(txtBoxScoresCurrentScores.Text)))+scores.Case(Convert.ToDecimal(scores.ProcessString(scores.NeededScores(Convert.ToDecimal(txtBoxScoresCurrentScores.Text)))));
+                    lblScoresNeededScores.Text = scores.ProcessString(scores.NeededScores(txtBoxScoresCurrentScores.Text)) + ' '+ scores.Case(scores.ProcessString(scores.NeededScores(txtBoxScoresCurrentScores.Text))) + '('+ scores.Percentage(scores.ProcessString(scores.NeededScores(txtBoxScoresCurrentScores.Text))) + "%)";
                 }
                 else
                 {
