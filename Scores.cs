@@ -73,7 +73,7 @@ namespace osu_calc
         {
             decimal v = Convert.ToDecimal(p);
             string o;
-            o = Convert.ToString((1000000*(v / arrayScores[(Convert.ToInt32(currentLevel)+1)])));
+            o = Convert.ToString((1000000*(v / ((arrayScores[(Convert.ToInt32(currentLevel)+1)])-(arrayScores[(Convert.ToInt32(currentLevel))])))));
             v = Math.Truncate(Convert.ToDecimal(o));
             o = Convert.ToString((v / 10000));
             return o;
